@@ -7,6 +7,7 @@ class CreateWinesTable < ActiveRecord::Migration[5.2]
       t.float :bottle_price
       t.float :glass_price
       t.string :description
+      t.string :winery
     end
   end
 end

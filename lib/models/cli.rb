@@ -1,4 +1,4 @@
-class Menu
+class CLI
 
     def self.main_menu
         puts "Please make a selection from the following:
