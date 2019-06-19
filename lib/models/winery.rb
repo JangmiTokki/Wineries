@@ -1,7 +1,6 @@
 class Winery < ActiveRecord::Base
-    has_many :wines
-    has_many :customers
-    t.references :wine, foreign_key :true
-    t.references :customer, foreign_key :true
-    
+    has_many :winery_wines
+    has_many :wines, through: :winery_wines
+    has_many :customers, through: :winery_wines
+
 end 

@@ -1,5 +1,6 @@
 class Wine < ActiveRecord::Base
-    belongs_to :winery
-    belongs_to :customer
+    has_many :winery_wines
+    has_many :wineries, through: :winery_wines
+    has_many :wines, through: :winery_wines
                              
 end
