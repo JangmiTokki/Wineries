@@ -1,9 +1,9 @@
 require 'pry'
 
-CustomerFavorite.delete_all
+# CustomerFavorite.delete_all
 Wine.delete_all
 Winery.delete_all
-Customer.delete_all
+# Customer.delete_all
 
 
 #DENVER 
@@ -173,12 +173,12 @@ Wine.create(name:"Riesling", wine_type:"dessert", year: 2015, bottle_price: 20, 
 
 
 
-Winery.create(name:"Deep Roots Winery & Bistro", location: "Denver", wine_type: "red, white, dessert")
-Winery.create(name:"Balistreri Vineyards", location: "Denver", wine_type: "white, red, dessert")
-Winery.create(name: "Bigsby's Folly: A Craft Winery & Cellar Door", location: "Denver", wine_type: "red, white, dessert")
-Winery.create(name:"Vino Colorado Winery", location: "Colorado Springs", wine_type: "red, white, dessert")
-Winery.create(name:"D'vine Wine Manitou Springs", location: "Colorado Springs", wine_type: "red, white, dessert")
-Winery.create(name:"Avant Vibeyard", location: "Paliside", wine_type: "red, white")
-Winery.create(name:"Grande river vineyard", location: "Paliside", wine_type: "red, white, dessert")
+Winery.create(winery_name:"Deep Roots Winery & Bistro", location: "Denver", wine_type: "red, white, dessert")
+Winery.create(winery_name:"Balistreri Vineyards", location: "Denver", wine_type: "white, red, dessert")
+Winery.create(winery_name: "Bigsby's Folly: A Craft Winery & Cellar Door", location: "Denver", wine_type: "red, white, dessert")
+Winery.create(winery_name:"Vino Colorado Winery", location: "Colorado Springs", wine_type: "red, white, dessert")
+Winery.create(winery_name:"D'vine Wine Manitou Springs", location: "Colorado Springs", wine_type: "red, white, dessert")
+Winery.create(winery_name:"Avant Vibeyard", location: "Paliside", wine_type: "red, white")
+Winery.create(winery_name:"Grande river vineyard", location: "Paliside", wine_type: "red, white, dessert")
 
 # binding.pry

@@ -10,10 +10,10 @@ ActiveRecord::Base.establish_connection(
 
 
 
-new_cli = CLI.run
-new_cli
+# new_cli = CLI.run
+# new_cli
+# CLI.locations
+# CLI.main_menu
 
 
-
-
-# binding.pry
+binding.pry
