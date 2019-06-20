@@ -9,14 +9,7 @@ ActiveRecord::Base.establish_connection(
 )
 
 
-CLI.welcome_message
+#CLI.start_cli
 
-#puts
-
-#CLI.main_menu
-
-#CLI.wines_by_type
-
-#CLI.wines_by_year
 
 #binding.pry

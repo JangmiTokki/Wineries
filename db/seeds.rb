@@ -2,7 +2,9 @@ require 'pry'
 
 Wine.delete_all
 Winery.delete_all 
-WineryWine.delete_all
+#CustomerFavorites.delete_all
+#Customer.delete_all
+
 #DENVER 
 
 #"Deep Roots Winery & Bistro"

@@ -10,19 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_19_154309) do
+ActiveRecord::Schema.define(version: 2019_06_20_155142) do
+
+  create_table "customer", force: :cascade do |t|
+    t.string "user_name"
+    t.text "wine_list"
+    t.text "winery_list"
+  end
+
+  create_table "customerfavorites", force: :cascade do |t|
+    t.integer "wines_id"
+    t.integer "wineries_id"
+    t.integer "customers_id"
+    t.index ["customers_id"], name: "index_customerfavorites_on_customers_id"
+    t.index ["wineries_id"], name: "index_customerfavorites_on_wineries_id"
+    t.index ["wines_id"], name: "index_customerfavorites_on_wines_id"
+  end
 
   create_table "wineries", force: :cascade do |t|
     t.string "name"
     t.string "location"
     t.text "wine_type"
-  end
-
-  create_table "winery_wines", force: :cascade do |t|
-    t.integer "wines_id"
-    t.integer "wineries_id"
-    t.index ["wineries_id"], name: "index_winery_wines_on_wineries_id"
-    t.index ["wines_id"], name: "index_winery_wines_on_wines_id"
   end
 
   create_table "wines", force: :cascade do |t|
