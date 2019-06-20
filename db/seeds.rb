@@ -1,5 +1,8 @@
 require 'pry'
 
+Wine.delete_all
+Winery.delete_all 
+WineryWine.delete_all
 #DENVER 
 
 #"Deep Roots Winery & Bistro"
@@ -14,7 +17,7 @@ Wine.create(name:"Crimson Rose", wine_type: "white", year: 2016, bottle_price: 2
 
 
 #reds
-Wine.create(name:"Pinot Noir", wine_type: "red", year: 2016, bottle_price: 36, glass_price: 12, description: "Cherry, strawberry, rhubarb and raspberry with hints of caramel and vanilla", winery_name: "Deep Roots Winery & Bistro" )
+Wine.create(name:"Pinot Noir", wine_type: "red", year: 2016, bottle_price: 36, glass_price: 12, description: "Cherry, strawberry, rhubarb and raspberry with hints of caramel and vanilla", winery_name: "Deep Roots Winery & Bistro", winery_name: "Deep Roots Winery & Bistro" )
 Wine.create(name:"Barbera",wine_type: "red", year: 2016, bottle_price: 40, glass_price: 13, description: "Bright Fruit, hints of plum and oak, lively spiciness, and crisp acidity", winery_name: "Deep Roots Winery & Bistro")
 Wine.create(name:"Cab Franc",wine_type: "red", year: 2015, bottle_price: 40, glass_price: 13, description: "Raspberry, ripe cherry & strawberry are beautifully married with vanilla, white pepper, cinnamon, oak & luxurious red fruit across the entire palate", winery_name: "Deep Roots Winery & Bistro")
 Wine.create(name:"Cabernet Sauvignon",wine_type: "red", year: 2016, bottle_price: 40, glass_price: 13, description: "Dark plum with notes of tobacco and blackberry supported by subtle tannins", winery_name:"Deep Roots Winery & Bistro")
@@ -23,11 +26,11 @@ Wine.create(name:"Meritage",wine_type: "red", year: 2015, bottle_price: 50, glas
 Wine.create(name:"Petit Verdot",wine_type: "red", year: 2017, bottle_price: 36, glass_price: 12, description: "Blackberry, dark cherry, and plum with hints of espresso and cinnamon", winery_name:"Deep Roots Winery & Bistro") 
 
 #dessert
-Wine.create(name: "White Zinfadel", wine_type: "dessert", year: 2018, bottle_price: 20, glass_price: 8, description: "Hint of watermelon, sweet with the luscious flavors of the Zinfandel grape.")
-Wine.create(name: "Black Raspberry Merlot", wine_type: "dessert", year: 2017, bottle_price: 22, glass_price: 8, description: "Ripe raspberries merge with the lush richness Merlot, berries and fruit.")
-Wine.create(name: "Ruby Port", wine_type: "dessert", year: 2016, bottle_price: 27, glass_price: 9, description: "Deep in color with sweet flavors of red fruit, fortified with brandy and aged.")
-Wine.create(name: "Red Velvet Port", wine_type: "dessert", year: 2016 , bottle_price: 27, glass_price: 9, description: "Rich & velvety dark berry with a hint of vanilla and a smooth cocoa finish.")
-Wine.create(name: "Late Harvest Riesling", wine_type: "dessert", year: 2017, bottle_price: 27, glass_price: 9, description: "Luscious full wine with hints of peach and apricot with a long sweet finish.")
+Wine.create(name: "White Zinfadel", wine_type: "dessert", year: 2018, bottle_price: 20, glass_price: 8, description: "Hint of watermelon, sweet with the luscious flavors of the Zinfandel grape.",winery_name: "Deep Roots Winery & Bistro")
+Wine.create(name: "Black Raspberry Merlot", wine_type: "dessert", year: 2017, bottle_price: 22, glass_price: 8, description: "Ripe raspberries merge with the lush richness Merlot, berries and fruit.", winery_name: "Deep Roots Winery & Bistro")
+Wine.create(name: "Ruby Port", wine_type: "dessert", year: 2016, bottle_price: 27, glass_price: 9, description: "Deep in color with sweet flavors of red fruit, fortified with brandy and aged.", winery_name: "Deep Roots Winery & Bistro")
+Wine.create(name: "Red Velvet Port", wine_type: "dessert", year: 2016 , bottle_price: 27, glass_price: 9, description: "Rich & velvety dark berry with a hint of vanilla and a smooth cocoa finish.", winery_name: "Deep Roots Winery & Bistro")
+Wine.create(name: "Late Harvest Riesling", wine_type: "dessert", year: 2017, bottle_price: 27, glass_price: 9, description: "Luscious full wine with hints of peach and apricot with a long sweet finish.",winery_name: "Deep Roots Winery & Bistro")
 
 #Balistreri Vineyards 
 
@@ -67,7 +70,7 @@ Wine.create(name: "Riesling", wine_type: "white", year: 2018, bottle_price: 34, 
 Wine.create(name: "Sauvignon Blanc", wine_type: "white", year: 2017, bottle_price: 34, glass_price: 9, description: "Kiwi & zesty lime with long elegant finish of ripe pear and honeydew.", winery_name: "Bigsby's Folly: A Craft Winery & Cellar Door")
 Wine.create(name: "Chardonnay", wine_type: "white", year: 2016, bottle_price: 50, glass_price: 13, description: "Ripe peaches, honeydew, Asian pear, pina colada, & hint of almond.", winery_name: "Bigsby's Folly: A Craft Winery & Cellar Door")
 Wine.create(name: "The White RiNo", wine_type: "white", year: 2019, bottle_price: 34, glass_price: 9, description: "Burgundy-style blend, creamy, ripe Asian pears and tropical fruits.", winery_name: "Bigsby's Folly: A Craft Winery & Cellar Door")
-Wine.create(name: "Late Harvest Riesling", wine_type: "whited", year: 2017, bottle_price: 30, glass_price: 8, description: "Honeycomb, ginger, nectarine, hints of pineapple & tart apricot.", winery_name: "Bigsby's Folly: A Craft Winery & Cellar Door")
+Wine.create(name: "Late Harvest Riesling", wine_type: "white", year: 2017, bottle_price: 30, glass_price: 8, description: "Honeycomb, ginger, nectarine, hints of pineapple & tart apricot.", winery_name: "Bigsby's Folly: A Craft Winery & Cellar Door")
 
 #rose
 Wine.create(name: "Rose of Grenache", wine_type: "rose", year: 2018, bottle_price: 38, glass_price: 10, description: "Dry, strawberries, honeydew, lime, zest of tangerine, smooth finish.", winery_name: "Bigsby's Folly: A Craft Winery & Cellar Door")
