@@ -1,5 +1,10 @@
 require 'pry'
 
+WineryWine.delete_all
+Wine.delete_all
+Winery.delete_all
+
+
 #DENVER 
 
 #"Deep Roots Winery & Bistro"
@@ -67,7 +72,7 @@ Wine.create(name: "Riesling", wine_type: "white", year: 2018, bottle_price: 34, 
 Wine.create(name: "Sauvignon Blanc", wine_type: "white", year: 2017, bottle_price: 34, glass_price: 9, description: "Kiwi & zesty lime with long elegant finish of ripe pear and honeydew.", winery_name: "Bigsby's Folly: A Craft Winery & Cellar Door")
 Wine.create(name: "Chardonnay", wine_type: "white", year: 2016, bottle_price: 50, glass_price: 13, description: "Ripe peaches, honeydew, Asian pear, pina colada, & hint of almond.", winery_name: "Bigsby's Folly: A Craft Winery & Cellar Door")
 Wine.create(name: "The White RiNo", wine_type: "white", year: 2019, bottle_price: 34, glass_price: 9, description: "Burgundy-style blend, creamy, ripe Asian pears and tropical fruits.", winery_name: "Bigsby's Folly: A Craft Winery & Cellar Door")
-Wine.create(name: "Late Harvest Riesling", wine_type: "whited", year: 2017, bottle_price: 30, glass_price: 8, description: "Honeycomb, ginger, nectarine, hints of pineapple & tart apricot.", winery_name: "Bigsby's Folly: A Craft Winery & Cellar Door")
+Wine.create(name: "Late Harvest Riesling", wine_type: "white", year: 2017, bottle_price: 30, glass_price: 8, description: "Honeycomb, ginger, nectarine, hints of pineapple & tart apricot.", winery_name: "Bigsby's Folly: A Craft Winery & Cellar Door")
 
 #rose
 Wine.create(name: "Rose of Grenache", wine_type: "rose", year: 2018, bottle_price: 38, glass_price: 10, description: "Dry, strawberries, honeydew, lime, zest of tangerine, smooth finish.", winery_name: "Bigsby's Folly: A Craft Winery & Cellar Door")
@@ -175,4 +180,4 @@ Winery.create(name:"D'vine Wine Manitou Springs", location: "Colorado Springs", 
 Winery.create(name:"Avant Vibeyard", location: "Paliside", wine_type: "red, white")
 Winery.create(name:"Grande river vineyard", location: "Paliside", wine_type: "red, white, dessert")
 
-binding.pry
+# binding.pry

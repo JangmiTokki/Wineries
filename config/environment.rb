@@ -8,4 +8,12 @@ ActiveRecord::Base.establish_connection(
     database: "db/wines.db"
 )
 
-#binding.pry
+
+
+# new_cli = CommandLineInterface.new_cli
+# new_cli.welcome
+
+
+
+
+binding.pry

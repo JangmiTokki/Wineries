@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2019_06_19_154309) do
     t.float "bottle_price"
     t.float "glass_price"
     t.string "description"
-    t.string "winery"
+    t.string "winery_name"
   end
 
 end
