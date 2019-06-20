@@ -1,6 +1,5 @@
 class Winery < ActiveRecord::Base
-    has_many :winery_wines
-    has_many :wines, through: :winery_wines
-    has_many :customers, through: :winery_wines
-
+    has_many :customer_winery
+    has_many :wines, through: :customer_favorite
+    has_many :customers, through: :customer_favorite
 end 

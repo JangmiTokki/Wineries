@@ -1,8 +1,9 @@
 require 'pry'
 
-WineryWine.delete_all
+CustomerFavorite.delete_all
 Wine.delete_all
 Winery.delete_all
+Customer.delete_all
 
 
 #DENVER 

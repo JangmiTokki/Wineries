@@ -10,29 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_19_154309) do
-
-  create_table "wineries", force: :cascade do |t|
-    t.string "name"
-    t.string "location"
-    t.text "wine_type"
-  end
-
-  create_table "winery_wines", force: :cascade do |t|
-    t.integer "wines_id"
-    t.integer "wineries_id"
-    t.index ["wineries_id"], name: "index_winery_wines_on_wineries_id"
-    t.index ["wines_id"], name: "index_winery_wines_on_wines_id"
-  end
-
-  create_table "wines", force: :cascade do |t|
-    t.string "name"
-    t.string "wine_type"
-    t.integer "year"
-    t.float "bottle_price"
-    t.float "glass_price"
-    t.string "description"
-    t.string "winery_name"
-  end
+ActiveRecord::Schema.define(version: 0) do
 
 end
