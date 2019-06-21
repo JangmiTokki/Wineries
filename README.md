@@ -8,9 +8,9 @@
 5. Query by winery name
 
 ### Built With 
-*Sinatra 
-*Active Record
-*SQLite 3
+* Sinatra 
+* Active Record
+* SQLite 3
 
 ### Authors
 Nelly Khmeleva
