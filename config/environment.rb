@@ -8,12 +8,12 @@ ActiveRecord::Base.establish_connection(
     database: "db/wines.db"
 )
 
+ActiveRecord::Base.logger = nil
 
-
-# new_cli = CLI.run
-# new_cli
+new_cli = CLI.run
+new_cli
 # CLI.locations
 # CLI.main_menu
 
 
-binding.pry
+# binding.pry

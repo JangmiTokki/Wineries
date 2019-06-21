@@ -75,8 +75,7 @@ Wine.create(name: "Chardonnay", wine_type: "white", year: 2016, bottle_price: 50
 Wine.create(name: "The White RiNo", wine_type: "white", year: 2019, bottle_price: 34, glass_price: 9, description: "Burgundy-style blend, creamy, ripe Asian pears and tropical fruits.", winery_name: "Bigsby's Folly: A Craft Winery & Cellar Door")
 Wine.create(name: "Late Harvest Riesling", wine_type: "white", year: 2017, bottle_price: 30, glass_price: 8, description: "Honeycomb, ginger, nectarine, hints of pineapple & tart apricot.", winery_name: "Bigsby's Folly: A Craft Winery & Cellar Door")
 
-#rose
-Wine.create(name: "Rose of Grenache", wine_type: "rose", year: 2018, bottle_price: 38, glass_price: 10, description: "Dry, strawberries, honeydew, lime, zest of tangerine, smooth finish.", winery_name: "Bigsby's Folly: A Craft Winery & Cellar Door")
+
 
 
 
@@ -111,62 +110,62 @@ Wine.create(name:"Eclipse", wine_type:"dessert", year: 2017, bottle_price: 20, g
 
 
 
-#"d'vine wine manitou springs"
+#"D'vine Wine Manitou Springs"
 #reds
-Wine.create(name:"Sangiovese", wine_type:"red", year: 2016, bottle_price: 20, glass_price: 8, description: "Known as the base for Chianti, this fruity wine has an elegant body", winery_name:"d'vine wine manitou springs")
-Wine.create(name:"Ponit Noir", wine_type:"red", year: 2017, bottle_price: 20, glass_price: 8, description: "This wine tends to be light to medium body with an aroma reminiscent of black cherry", winery_name:"d'vine wine manitou springs")
-Wine.create(name:"Malbec", wine_type:"red", year: 2018, bottle_price: 20, glass_price: 8, description: "This rich violet wine offers an intense plum-like flavor with a hint of smokiness", winery_name:"d'vine wine manitou springs")
-Wine.create(name:"Barbera", wine_type:"red", year: 2017, bottle_price: 20, glass_price: 8, description: "Deep in color, this high tannin, full-bodied wine has a robust plum flavor and fragrant bouquet with oak undertones", winery_name:"d'vine wine manitou springs")
-Wine.create(name:"Tempranillo", wine_type:"red", year: 2017, bottle_price: 20, glass_price: 8, description: "Smooth peppery finish with hints of smokiness", winery_name:"d'vine wine manitou springs")
+Wine.create(name:"Sangiovese", wine_type:"red", year: 2016, bottle_price: 20, glass_price: 8, description: "Known as the base for Chianti, this fruity wine has an elegant body", winery_name:"D'vine Wine Manitou Springs")
+Wine.create(name:"Ponit Noir", wine_type:"red", year: 2017, bottle_price: 20, glass_price: 8, description: "This wine tends to be light to medium body with an aroma reminiscent of black cherry", winery_name:"D'vine Wine Manitou Springs")
+Wine.create(name:"Malbec", wine_type:"red", year: 2018, bottle_price: 20, glass_price: 8, description: "This rich violet wine offers an intense plum-like flavor with a hint of smokiness", winery_name:"D'vine Wine Manitou Springs")
+Wine.create(name:"Barbera", wine_type:"red", year: 2017, bottle_price: 20, glass_price: 8, description: "Deep in color, this high tannin, full-bodied wine has a robust plum flavor and fragrant bouquet with oak undertones", winery_name:"D'vine Wine Manitou Springs")
+Wine.create(name:"Tempranillo", wine_type:"red", year: 2017, bottle_price: 20, glass_price: 8, description: "Smooth peppery finish with hints of smokiness", winery_name:"D'vine Wine Manitou Springs")
 
 
 #white
-Wine.create(name:"Viognier", wine_type:"white", year: 2016, bottle_price: 20, glass_price: 8, description: "A medium bodied non-oaked white wine, low in acidity, with aromatic notes of peaches and apricots", winery_name:"d'vine wine manitou springs")
-Wine.create(name:"Ponit Grigio", wine_type:"white", year: 2016, bottle_price: 20, glass_price: 8, description: "A delicious scent of honey and herbs can be noted in this dry straw-colored wine", winery_name:"d'vine wine manitou springs")
-Wine.create(name:"Chardonnay", wine_type:"white", year: 2016, bottle_price: 20, glass_price: 8, description: "Gold in the glass, this delicious wine has lush overtones of vanilla with a smooth hint of pear", winery_name:"d'vine wine manitou springs")
+Wine.create(name:"Viognier", wine_type:"white", year: 2016, bottle_price: 20, glass_price: 8, description: "A medium bodied non-oaked white wine, low in acidity, with aromatic notes of peaches and apricots", winery_name:"D'vine Wine Manitou Springs")
+Wine.create(name:"Ponit Grigio", wine_type:"white", year: 2016, bottle_price: 20, glass_price: 8, description: "A delicious scent of honey and herbs can be noted in this dry straw-colored wine", winery_name:"D'vine Wine Manitou Springs")
+Wine.create(name:"Chardonnay", wine_type:"white", year: 2016, bottle_price: 20, glass_price: 8, description: "Gold in the glass, this delicious wine has lush overtones of vanilla with a smooth hint of pear", winery_name:"D'vine Wine Manitou Springs")
 
 
 #dessert
-Wine.create(name:"Manitou Gold - Peach Chardonnay", wine_type:"dessert", year: 2016, bottle_price: 18, glass_price: 9, description: "Enjoy the lush, juicy freshness of sun-warmed peaches, with the saucy tang of our Chardonnay", winery_name:"d'vine wine manitou springs")
-Wine.create(name:"Summit Sunset - Grapefruit Blush", wine_type:"dessert", year: 2017, bottle_price: 18, glass_price: 9, description: "This tangy, refreshing wine offers the tart taste of fresh ruby red grapefruit with a light Zinfandel base", winery_name:"d'vine wine manitou springs")
-Wine.create(name:"Strawberry White Zinfandel", wine_type:"dessert", year: 2018, bottle_price: 18, glass_price: 9, description: "Exploding with candied fruitiness and fresh strawberry aroma, this classically pink wine has hints of Red Zinfandel's greatness that run into a tangy finish bursting with strawberry", winery_name:"d'vine wine manitou springs")
+Wine.create(name:"Manitou Gold - Peach Chardonnay", wine_type:"dessert", year: 2016, bottle_price: 18, glass_price: 9, description: "Enjoy the lush, juicy freshness of sun-warmed peaches, with the saucy tang of our Chardonnay", winery_name:"D'vine Wine Manitou Springs")
+Wine.create(name:"Summit Sunset - Grapefruit Blush", wine_type:"dessert", year: 2017, bottle_price: 18, glass_price: 9, description: "This tangy, refreshing wine offers the tart taste of fresh ruby red grapefruit with a light Zinfandel base", winery_name:"D'vine Wine Manitou Springs")
+Wine.create(name:"Strawberry White Zinfandel", wine_type:"dessert", year: 2018, bottle_price: 18, glass_price: 9, description: "Exploding with candied fruitiness and fresh strawberry aroma, this classically pink wine has hints of Red Zinfandel's greatness that run into a tangy finish bursting with strawberry", winery_name:"D'vine Wine Manitou Springs")
 
 
 #PALISIDE
 
-#"avant vibeyard"
+#"Avant Vibeyard"
 #reds
-Wine.create(name:"Tempranillo", wine_type:"red", year: 2018, bottle_price: 23.99, glass_price: 8.99, description: "Spanish Varietal. Top notes of chocolate, vanilla", winery_name:"avant vibeyard")
-Wine.create(name:"Cabernet Franc", wine_type:"red", year: 2017, bottle_price: 24.99, glass_price: 9.99, description: "Red fruit/berry, medium body with pleasing oak characte", winery_name:"avant vibeyard")
-Wine.create(name:"Sangiovese", wine_type:"red", year: 2017, bottle_price: 22.99, glass_price: 8.99, description: "Delicious Italian varietal", winery_name:"avant vibeyard")
-Wine.create(name:"Malbec", wine_type:"red", year: 2018, bottle_price: 25.99, glass_price: 10.99, description: "Medium bodied. Fruit and tannins nicely balanced", winery_name:"avant vibeyard")
-Wine.create(name:"Petit Verdot", wine_type:"red", year: 2017, bottle_price: 26.99, glass_price: 11.99, description: "Dried violets on the nose. Smooth silky tannins", winery_name:"avant vibeyard")
+Wine.create(name:"Tempranillo", wine_type:"red", year: 2018, bottle_price: 23.99, glass_price: 8.99, description: "Spanish Varietal. Top notes of chocolate, vanilla", winery_name:"Avant Vibeyard")
+Wine.create(name:"Cabernet Franc", wine_type:"red", year: 2017, bottle_price: 24.99, glass_price: 9.99, description: "Red fruit/berry, medium body with pleasing oak characte", winery_name:"Avant Vibeyard")
+Wine.create(name:"Sangiovese", wine_type:"red", year: 2017, bottle_price: 22.99, glass_price: 8.99, description: "Delicious Italian varietal", winery_name:"Avant Vibeyard")
+Wine.create(name:"Malbec", wine_type:"red", year: 2018, bottle_price: 25.99, glass_price: 10.99, description: "Medium bodied. Fruit and tannins nicely balanced", winery_name:"Avant Vibeyard")
+Wine.create(name:"Petit Verdot", wine_type:"red", year: 2017, bottle_price: 26.99, glass_price: 11.99, description: "Dried violets on the nose. Smooth silky tannins", winery_name:"Avant Vibeyard")
 
 #white
-Wine.create(name:"Roussanne", wine_type:"white", year: 2017, bottle_price: 17.99, glass_price: 7.99, description: "Pear Notes, crisp and refreshing", winery_name:"avant vibeyard")
-Wine.create(name:"Sauvignon Blanc", wine_type:"white", year: 2016, bottle_price: 17.99, glass_price: 7.99, description: "Citrusy, melon nose. Delicate fruit and balanced", winery_name:"avant vibeyard")
-Wine.create(name:"Viognier", wine_type:"white", year: 2017, bottle_price: 17.99, glass_price: 7.99, description: "Floral notes, balanced with smooth finish", winery_name:"avant vibeyard")
+Wine.create(name:"Roussanne", wine_type:"white", year: 2017, bottle_price: 17.99, glass_price: 7.99, description: "Pear Notes, crisp and refreshing", winery_name:"Avant Vibeyard")
+Wine.create(name:"Sauvignon Blanc", wine_type:"white", year: 2016, bottle_price: 17.99, glass_price: 7.99, description: "Citrusy, melon nose. Delicate fruit and balanced", winery_name:"Avant Vibeyard")
+Wine.create(name:"Viognier", wine_type:"white", year: 2017, bottle_price: 17.99, glass_price: 7.99, description: "Floral notes, balanced with smooth finish", winery_name:"Avant Vibeyard")
 
 
-#"Grande river vineyard"
+#"Grande River Vineyard"
 
 #reds
-Wine.create(name:"Dry Rose", wine_type:"red", year: 2016, bottle_price: 24, glass_price: 10, description: "Pink, tangy berry fruits, great body, floral notes, and a superb mouth feel", winery_name:"Grande river vineyard")
-Wine.create(name:"Cabernet Franc", wine_type:"red", year: 2016, bottle_price: 23, glass_price: 10, description: "Light red in color, this is a fruit forward wine with aromas of red berries", winery_name:"Grande river vineyard")
-Wine.create(name:"Syrah", wine_type:"red", year: 2015, bottle_price: 24, glass_price: 10, description: "Dark garnet red in color, this wine offers aromas of mocha and generous cherry and blackberry fruits with a hint of spice", winery_name:"Grande river vineyard")
-Wine.create(name:"Merlot", wine_type:"red", year: 2016, bottle_price: 25, glass_price: 10, description: "Blueberry aroma on the nose followed by cherry and fruity goodness", winery_name:"Grande river vineyard")
-Wine.create(name:"Malbec", wine_type:"red", year: 2016, bottle_price: 23, glass_price: 9, description: "The wine displays dense fruit aromas with flavors of cherry and raspberry fruit", winery_name:"Grande river vineyard")
+Wine.create(name:"Dry Rose", wine_type:"red", year: 2016, bottle_price: 24, glass_price: 10, description: "Pink, tangy berry fruits, great body, floral notes, and a superb mouth feel", winery_name:"Grande River Vineyard")
+Wine.create(name:"Cabernet Franc", wine_type:"red", year: 2016, bottle_price: 23, glass_price: 10, description: "Light red in color, this is a fruit forward wine with aromas of red berries", winery_name:"Grande River Vineyard")
+Wine.create(name:"Syrah", wine_type:"red", year: 2015, bottle_price: 24, glass_price: 10, description: "Dark garnet red in color, this wine offers aromas of mocha and generous cherry and blackberry fruits with a hint of spice", winery_name:"Grande River Vineyard")
+Wine.create(name:"Merlot", wine_type:"red", year: 2016, bottle_price: 25, glass_price: 10, description: "Blueberry aroma on the nose followed by cherry and fruity goodness", winery_name:"Grande River Vineyard")
+Wine.create(name:"Malbec", wine_type:"red", year: 2016, bottle_price: 23, glass_price: 9, description: "The wine displays dense fruit aromas with flavors of cherry and raspberry fruit", winery_name:"Grande River Vineyard")
 
 #white
-Wine.create(name:"Sauvignon Blanc", wine_type:"white", year: 2016, bottle_price: 22, glass_price: 10, description: "A well balanced dry, crisp and refreshing white wine that offers notes of grapefruit and citrus flavors with a slight mineral character on the finish", winery_name:"Grande river vineyard")
-Wine.create(name:"Lavande Vin Blanc", wine_type:"white", year: 2017, bottle_price: 23, glass_price: 10, description: "A dry, crisp and light Semillon and Viognier wine infused with Lavender", winery_name:"Grande river vineyard")
-Wine.create(name:"Viognier ", wine_type:"white", year: 2019, bottle_price: 23, glass_price: 10, description: "Made in a dry style,  tank fermented, this wine offers aromas of pineapple and peach", winery_name:"Grande river vineyard")
-Wine.create(name:"Meritage White", wine_type:"white", year: 2018, bottle_price: 22, glass_price: 10, description: "A white Bordeaux blend of Sauvignon Blanc and Semillon fermented and aged in oak barrels for 9 months", winery_name:"Grande river vineyard")
+Wine.create(name:"Sauvignon Blanc", wine_type:"white", year: 2016, bottle_price: 22, glass_price: 10, description: "A well balanced dry, crisp and refreshing white wine that offers notes of grapefruit and citrus flavors with a slight mineral character on the finish", winery_name:"Grande River Vineyard")
+Wine.create(name:"Lavande Vin Blanc", wine_type:"white", year: 2017, bottle_price: 23, glass_price: 10, description: "A dry, crisp and light Semillon and Viognier wine infused with Lavender", winery_name:"Grande River Vineyard")
+Wine.create(name:"Viognier ", wine_type:"white", year: 2019, bottle_price: 23, glass_price: 10, description: "Made in a dry style,  tank fermented, this wine offers aromas of pineapple and peach", winery_name:"Grande River Vineyard")
+Wine.create(name:"Meritage White", wine_type:"white", year: 2018, bottle_price: 22, glass_price: 10, description: "A white Bordeaux blend of Sauvignon Blanc and Semillon fermented and aged in oak barrels for 9 months", winery_name:"Grande River Vineyard")
 
 #dessert
-Wine.create(name:"Sweet Red", wine_type:"dessert", year: 2019, bottle_price: 20, glass_price: 9, description: "Made from a blend of varieties we grow, some of which are late harvested to provide a rich sweet taste", winery_name:"Grande river vineyard")
-Wine.create(name:"dessert Blush", wine_type:"dessert", year: 2019, bottle_price: 18, glass_price: 8, description: "Soft slightly sweet flavors of strawberry and raspberries with a gorgeous salmon color", winery_name:"Grande river vineyard")
-Wine.create(name:"Riesling", wine_type:"dessert", year: 2015, bottle_price: 20, glass_price: 9, description: "A slightly sweet wine with traditional Riesling characteristics and tantalizing fruit and floral aromas", winery_name:"Grande river vineyard")
+Wine.create(name:"Sweet Red", wine_type:"dessert", year: 2019, bottle_price: 20, glass_price: 9, description: "Made from a blend of varieties we grow, some of which are late harvested to provide a rich sweet taste", winery_name:"Grande River Vineyard")
+Wine.create(name:"dessert Blush", wine_type:"dessert", year: 2019, bottle_price: 18, glass_price: 8, description: "Soft slightly sweet flavors of strawberry and raspberries with a gorgeous salmon color", winery_name:"Grande River Vineyard")
+Wine.create(name:"Riesling", wine_type:"dessert", year: 2015, bottle_price: 20, glass_price: 9, description: "A slightly sweet wine with traditional Riesling characteristics and tantalizing fruit and floral aromas", winery_name:"Grande River Vineyard")
 
 
 
@@ -179,6 +178,6 @@ Winery.create(winery_name: "Bigsby's Folly: A Craft Winery & Cellar Door", locat
 Winery.create(winery_name:"Vino Colorado Winery", location: "Colorado Springs", wine_type: "red, white, dessert")
 Winery.create(winery_name:"D'vine Wine Manitou Springs", location: "Colorado Springs", wine_type: "red, white, dessert")
 Winery.create(winery_name:"Avant Vibeyard", location: "Paliside", wine_type: "red, white")
-Winery.create(winery_name:"Grande river vineyard", location: "Paliside", wine_type: "red, white, dessert")
+Winery.create(winery_name:"Grande River Vineyard", location: "Paliside", wine_type: "red, white, dessert")
 
 # binding.pry
