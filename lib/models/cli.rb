@@ -429,10 +429,13 @@ class CLI
         @user_loc_sel = gets.chomp
         if @user_loc_sel == "1"
             denver_wineries
+            select_from_denver_wineries
         elsif @user_loc_sel == "2"
             colorado_springs_wineries
+            select_from_colorado_springs_wineries
         elsif @user_loc_sel == "3"
             paliside_wineries
+            select_from_paliside_wineries
         else
             select_from_locations
         end  
@@ -520,33 +523,27 @@ class CLI
     end 
 
 
-    def location_choice
-        if 
-    end 
-
-
 
     def self.run
         welcome
         start_menu
 
-        select_from_denver_wineries
-        select_from_colorado_springs_wineries
-        select_from_paliside_wineries
+        # select_from_denver_wineries
+        # select_from_colorado_springs_wineries
+        # select_from_paliside_wineries
 
-        wine_type_choice_deep_roots
-        wine_type_choice_bali_vine
-        wine_type_choice_bigsby
-        wine_type_choice_vino_colorado
-        wine_type_choice_divine
-        wine_type_choice_avant
-        wine_type_choice_grande
+        # wine_type_choice_deep_roots
+        # wine_type_choice_bali_vine
+        # wine_type_choice_bigsby
+        # wine_type_choice_vino_colorado
+        # wine_type_choice_divine
+        # wine_type_choice_avant
+        # wine_type_choice_grande
 
         select_from_locations
         
         bye_method
         
-
         
     end 
 
