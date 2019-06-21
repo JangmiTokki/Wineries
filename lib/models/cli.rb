@@ -1,12 +1,18 @@
 class CLI
 
     
-    def self.welcome 
-        puts "Welcome to Unwinery Guide!"
-    end 
+    # def self.welcome 
+    #     puts "Welcome to Unwinery Guide!"
+        
+    # end 
 
     def self.start_menu
+        system "clear"
+        system "imgcat https://www.intimateweddings.com/wp-content/uploads/2018/03/peninsula-ridge-winery-wedding-thumbs.jpg"
+       
+        puts "Welcome to Unwinery Guide!"
         puts "Press 1 to see main menu or 0 to exit!"
+      
         @user = gets.chomp
         if @user == "1"
             main_menu
@@ -47,13 +53,28 @@ class CLI
     end
 
     def self.bali_vine_red_wines
+        system "clear"
         Wine.all.select do |wine|
             if wine.winery_name == "Balistreri Vineyards" && wine.wine_type == "red"
                 puts "#{wine.name} - #{wine.year} - glass $#{wine.glass_price} - bottle $#{wine.bottle_price}"
                 puts
             end 
+            
         end
+        bye_selection
     end
+
+    def self.bye_selection
+        puts "Would you like to make another selection?
+        Enter 1
+        Enter any character for exit."
+        @user_bye_selection = gets.chomp
+        if @user_bye_selection == "1"
+            start_menu
+        else 
+            bye_method
+        end 
+    end 
     
     def self.bali_vine_white_wines
         Wine.all.select do |wine|
@@ -206,12 +227,14 @@ class CLI
     # method that shows wine type from Denver winery
     #1 Denver - deep root
     def self.wine_type_choice_deep_roots
-        puts "Please chose from the following:
-        Enter 1 for \"Red\"
-        Enter 2 for \"White\"
-        Enter 3 for \"Dessert\"
-        Enter 4 to go back to previous menu
-        Enter 0 to exit"
+        system "clear"
+        puts "Welcome to Deep Roots Winery & Bistro!
+    Please choose from the following:
+    Enter 1 for \"Red\"
+    Enter 2 for \"White\"
+    Enter 3 for \"Dessert\"
+    Enter 4 to go back to previous menu
+    Enter 0 to exit"
         @user_wine_type_deep_roots = gets.chomp
         if @user_wine_type_deep_roots == "1"
             deep_roots_red_wines
@@ -230,7 +253,9 @@ class CLI
 
     #2 Denver - vine
     def self.wine_type_choice_bali_vine
-        puts "Please chose from the following:
+        system "clear"
+        puts "Welcome to Balistreri Vineyards!
+        Please choose from the following:
         Enter 1 for \"Red\"
         Enter 2 for \"White\"
         Enter 3 for \"Dessert\"
@@ -245,8 +270,8 @@ class CLI
             bali_vine_dessert_wines
         elsif @user_wine_type_bali == "4"
             select_from_denver_wineries
-        elsif 
-            bye_method
+        # elsif 
+        #     # bye_method
         else 
             wine_type_choice_bali_vine
         end 
@@ -254,7 +279,9 @@ class CLI
            
     #3 Denver - bigsby
     def self.wine_type_choice_bigsby
-        puts "Please chose from the following:
+        system "clear"
+        puts "Welcome to Bigsby's Folly: A Craft Winery & Cellar Door!
+        Please choose from the following:
         Enter 1 for \"Red\"
         Enter 2 for \"White\"
         Enter 3 for \"Dessert\"
@@ -279,7 +306,9 @@ class CLI
 
     #1 colorado springs vino colorado winery
     def self.wine_type_choice_vino_colorado
-        puts "Please choose from the following:
+        system "clear"
+        puts "Welcome to Vino Colorado Winery!
+        Please choose from the following:
         Enter 1 for \"Red\"
         Enter 2 for \"White\"
         Enter 3 for \"Dessert\"
@@ -303,7 +332,9 @@ class CLI
 
     #2 colorado springs d'ivine
     def self.wine_type_choice_divine
-        puts "Please chose from the following:
+        system "clear"
+        puts "Welcome to D'vine Wine Manitou Springs!
+        Please choose from the following:
         Enter 1 for \"Red\"
         Enter 2 for \"White\"
         Enter 3 for \"Dessert\"
@@ -327,7 +358,9 @@ class CLI
 
     #1 paliside - avant 
     def self.wine_type_choice_avant
-        puts "Please chose from the following:
+        system "clear"
+        puts "Welcome to Avant Vibeyard!
+        Please choose from the following:
         Enter 1 for \"Red\"
         Enter 2 for \"White\"
         Enter 3 to go back to previous menu
@@ -348,7 +381,9 @@ class CLI
 
     #2 paliside - grande river 
     def self.wine_type_choice_grande
-        puts "Please chose from the following:
+        system "clear"
+        puts "Welcome to Grande River Vineyard!
+        Please choose from the following:
         Enter 1 for \"Red\"
         Enter 2 for \"White\"
         Enter 3 for \"Dessert\"
@@ -370,9 +405,9 @@ class CLI
         end 
     end 
 
-    def self.locations
-        puts Winery.pluck(:location).uniq.join("\n")
-    end 
+    # def self.locations
+    #     puts Winery.pluck(:location).uniq.join("\n")
+    # end 
 
 
     def self.list_of_wineries
@@ -408,12 +443,14 @@ class CLI
 
 
     def self.main_menu
+        system "clear"
+
         puts "Please make a selection from the following:
         Enter 1 to see locations
         Press 0 to exit"
         @user = gets.chomp
         if @user == "1"
-            locations 
+            select_from_locations 
         elsif @user == "0"
             bye_method
         else 
@@ -422,17 +459,22 @@ class CLI
     end 
 
     def self.select_from_locations
+        system "clear"
+
         puts "Please choose the location!
         Enter 1 for Denver
         Enter 2 for Colorado Springs
         Enter 3 for Paliside"
         @user_loc_sel = gets.chomp
         if @user_loc_sel == "1"
-            denver_wineries
+            # denver_wineries
+            select_from_denver_wineries
         elsif @user_loc_sel == "2"
-            colorado_springs_wineries
+            # colorado_springs_wineries
+            select_from_colorado_springs_wineries
         elsif @user_loc_sel == "3"
-            paliside_wineries
+            # paliside_wineries
+            select_from_paliside_wineries
         else
             select_from_locations
         end  
@@ -440,6 +482,7 @@ class CLI
 
     # denver wineries
     def self.select_from_denver_wineries
+        system "clear"
         puts "Please choose from the following wineries.
         Enter 1 for Deep Roots Winery & Bistro
         Enter 2 for Balistreri Vineyards
@@ -464,6 +507,7 @@ class CLI
 
     #colorado springs wineries
     def self.select_from_colorado_springs_wineries
+        system "clear"
         puts "Please choose from the following wineries.
         Enter 1 for Vino Colorado Winery
         Enter 2 for D'vine Wine Manitou Springs
@@ -484,6 +528,7 @@ class CLI
     end
     #paliside wineries
     def self.select_from_paliside_wineries
+        system "clear"
         puts "Please choose from the following wineries.
         Enter 1 for Avant Vibeyard
         Enter 2 for Grande River Vineyard
@@ -515,36 +560,31 @@ class CLI
     end 
 
     
-    def self.bye_method
-        puts "goodbye"
-    end 
+    
 
-
-    def location_choice
-        if 
-    end 
-
+   
+    
 
 
     def self.run
-        welcome
-        start_menu
-
-        select_from_denver_wineries
-        select_from_colorado_springs_wineries
-        select_from_paliside_wineries
-
-        wine_type_choice_deep_roots
-        wine_type_choice_bali_vine
-        wine_type_choice_bigsby
-        wine_type_choice_vino_colorado
-        wine_type_choice_divine
-        wine_type_choice_avant
-        wine_type_choice_grande
-
-        select_from_locations
         
-        bye_method
+        start_menu
+       
+        # select_from_denver_wineries
+        # select_from_colorado_springs_wineries
+        # select_from_paliside_wineries
+
+        # wine_type_choice_deep_roots
+        # wine_type_choice_bali_vine
+        # wine_type_choice_bigsby
+        # wine_type_choice_vino_colorado
+        # wine_type_choice_divine
+        # wine_type_choice_avant
+        # wine_type_choice_grande
+
+        # select_from_locations
+        
+        # bye_method
         
 
         
@@ -552,5 +592,15 @@ class CLI
 
 
     
+    def self.bye_method
+        
+
+        puts "Thank you for visiting!"
+        system "imgcat https://media3.giphy.com/media/xUPGckNK4ZlapIzfpK/giphy.gif"
+    end 
+
+
+    
 
 end
+

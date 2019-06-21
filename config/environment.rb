@@ -1,6 +1,7 @@
 require "sinatra/activerecord"
 require "require_all"
 require "pry"
+require "colorize"
 require_all "lib"
 
 ActiveRecord::Base.establish_connection(
@@ -10,8 +11,9 @@ ActiveRecord::Base.establish_connection(
 
 ActiveRecord::Base.logger = nil
 
-new_cli = CLI.run
-new_cli
+CLI.run
+# CLI.bye_method
+
 # CLI.locations
 # CLI.main_menu
 
